@@ -1,0 +1,8 @@
+Deployment
+Suppose you have deployed your application using a deployment controller. Assume the initial number of replicas is one. 
+Write the steps needed to update a container's image using deployment, making sure that there is zero downtime.
+
+Let assume Old version : nginx:1.16.2 & New Version nginx:1.16.1
+
+Command 
+kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1
